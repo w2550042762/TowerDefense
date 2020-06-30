@@ -21,7 +21,7 @@ public class BuildManager : MonoBehaviour
 
     public Animator moneyAnimator;
 
-    private int money = 1000;
+    public int money = 1000;
 
     public GameObject UPCanvas;
 

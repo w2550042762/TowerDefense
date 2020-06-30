@@ -285,11 +285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98240f8fb3835a84d8b831fe654cae1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
-  hp: 80
+  speed: 25
+  hp: 100
   explosionEffect: {fileID: 1487194176546462545, guid: 527e699edfdf8b042ada9a5bd2df9467,
     type: 3}
-  hpSlider: {fileID: 3869535131134277817}
 --- !u!135 &852295476886945351
 SphereCollider:
   m_ObjectHideFlags: 0
