@@ -13,8 +13,6 @@ public class Monster : MonoBehaviour
     private Slider hpSlider;
     private Transform[] positions;
     private int index = 0;
-    
-
 
     // Use this for initialization
     void Start()
@@ -60,7 +58,7 @@ public class Monster : MonoBehaviour
     {
         MonsterSpawner.CountMonsterAlive--;
     }
-
+    
     public void TakeDamage(float damage)
     {
         if (hp <= 0) return;
@@ -68,19 +66,14 @@ public class Monster : MonoBehaviour
         hpSlider.value = (float)hp / totalHp;
         if (hp <= 0)
         {
-            //BuildManager.money += 80;
             Die();
-            
         }
     }
     void Die()
     {
         GameObject effect = GameObject.Instantiate(explosionEffect, transform.position, transform.rotation);
-        
-        //effect.transform.SetParent(transform, false);
         Destroy(effect, 1.5f);
         Destroy(this.gameObject);
-        
     }
 
 }

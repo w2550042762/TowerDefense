@@ -35,6 +35,8 @@ public class Tower : MonoBehaviour
 
     public LineRenderer laserRenderer;
 
+    
+
     //public GameObject laserEffect;
 
     void Start()

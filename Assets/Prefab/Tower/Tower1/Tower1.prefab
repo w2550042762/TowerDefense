@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 688411101088332939}
   m_Layer: 11
   m_Name: Tower1
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,7 +133,6 @@ MonoBehaviour:
   useLaser: 0
   damageRate: 70
   laserRenderer: {fileID: 0}
-  laserEffect: {fileID: 0}
 --- !u!135 &2282598919821177733
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,6 +13,8 @@ public class TowerData
     public GameObject towerUPPrefab;
     public int costUP;
     public TowerType type;
+    //public int costDestory;
+
 }
 public enum TowerType
 {

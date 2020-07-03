@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 7915413136175668265}
   m_Layer: 11
   m_Name: Tower3
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,8 +229,6 @@ MonoBehaviour:
   useLaser: 1
   damageRate: 30
   laserRenderer: {fileID: 1115091960}
-  laserEffect: {fileID: 4875506950050274543, guid: 6d5cdc33403105f4ea9aaa6f89a49611,
-    type: 3}
 --- !u!135 &5042380398011526769
 SphereCollider:
   m_ObjectHideFlags: 0

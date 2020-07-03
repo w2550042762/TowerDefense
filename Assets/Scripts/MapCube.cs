@@ -56,17 +56,4 @@ public class MapCube : MonoBehaviour
         GameObject effect = GameObject.Instantiate(buildEffect, transform.position, Quaternion.identity);
         Destroy(effect, 1.5f);
     }
-
-    //void OnMouseEnter()
-    //{
-
-    //    if (towerGo == null && EventSystem.current.IsPointerOverGameObject() == false)
-    //    {
-    //        renderer.material.color = Color.red;
-    //    }
-    //}
-    //void OnMouseExit()
-    //{
-    //    renderer.material.color = Color.yellow;
-    //}
 }

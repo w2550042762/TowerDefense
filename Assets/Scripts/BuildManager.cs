@@ -45,13 +45,9 @@ public class BuildManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            //Debug.Log("11");
-            //if (EventSystem.current.IsPointerOverGameObject() == false)
             {
-                //Debug.Log("22");
                 //开发炮台的建造
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                //Debug.Log(ray);
                 RaycastHit hit;
                 bool isCollider = Physics.Raycast(ray, out hit, 1000, LayerMask.GetMask("MapCube"));
                 if (isCollider)
@@ -64,7 +60,6 @@ public class BuildManager : MonoBehaviour
                         {
                             ChangeMoney(-selectedTowerData.cost);
                             mapCube.BuildTower(selectedTowerData);
-                            //Debug.Log("33");
                         }
                         else
                         {
@@ -148,10 +143,13 @@ public class BuildManager : MonoBehaviour
 
         StartCoroutine(HideUPUI());
     }
+    //private TowerData towerData;
     public void OnDestroyButtonDown()
     {
         selectedMapCube.DestroyTower();
         StartCoroutine(HideUPUI());
+        money += 50;
+        moneyText.text = "￥" + money;
     }
 
 }
